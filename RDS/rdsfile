@@ -1,0 +1,19 @@
+CREATE DATABASE BookDB;
+
+
+
+CREATE TABLE IF NOT EXISTS books (
+    book_id INT AUTO_INCREMENT,
+	title VARCHAR(255) NOT NULL,
+	author VARCHAR(255),
+	publish_date DATE,
+	description TEXT,
+	PRIMARY KEY (book_id)
+)  ENGINE=INNODB;
+
+INSERT INTO books(title,author) VALUE ('Learn AWS RDS' ,'Ravi Kumar');
+
+INSERT INTO books(title,author) VALUE ('MySQL Tips and Tricks' ,'Shashank');
+
+
+INSERT INTO books(title,author) VALUE ('MySQL best practices' ,'ammulu');
